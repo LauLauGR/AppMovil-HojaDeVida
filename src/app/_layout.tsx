@@ -11,10 +11,11 @@ export default function Layout() {
           title: "Inicio",
           headerTitle: "Datos Personales",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person-outline" size={size} color={color} />
+            <Ionicons name="person-outline" size={size} color={color as string} />
           ),
         }}
       />
+
       {/* Pestaña de Estudios */}
       <Tabs.Screen
         name="estudios"
@@ -22,10 +23,11 @@ export default function Layout() {
           title: "Estudios",
           headerTitle: "Estudios",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="school-outline" size={size} color={color} />
+            <Ionicons name="school-outline" size={size} color={color as string} />
           ),
         }}
       />
+
       {/* Pestaña de Experiencia */}
       <Tabs.Screen
         name="experiencia"
@@ -33,7 +35,19 @@ export default function Layout() {
           title: "Experiencia",
           headerTitle: "Experiencia",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="briefcase-outline" size={size} color={color} />
+            <Ionicons name="briefcase-outline" size={size} color={color as string} />
+          ),
+        }}
+      />
+
+      {/* Pestaña de Hobbies */}
+      <Tabs.Screen
+        name="hobbies"
+        options={{
+          title: "Hobbies",
+          headerTitle: "Hobbies",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="heart-outline" size={size} color={color as string} />
           ),
         }}
       />
