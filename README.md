@@ -6,8 +6,8 @@ App móvil de hoja de vida con 4 pantallas (Datos Personales, Estudios, Experien
 - Node.js, Expo Go en el celular
 
 ## Cómo ejecutar
-npm install
-npx expo start
+npm install @expo/ngrok@^4.1.0
+npx expo start --tunnel ngrok
 
 ## Estructura
 - src/app: pantallas y menú de pestañas (_layout.tsx)
